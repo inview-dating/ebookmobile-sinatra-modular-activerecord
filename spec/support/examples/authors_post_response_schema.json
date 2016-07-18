@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [ "id", "first_name", "last_name" ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "integer" },
+    "first_name": { "type": "string" },
+    "last_name": { "type": "string" },
+    "genre": { "type": "string" },
+    "birth_year": {
+      "type": "integer",
+      "maximum": 2010
+    },
+    "death_year": {
+      "type": "integer",
+      "maximum": 2016
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

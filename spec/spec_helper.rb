@@ -4,6 +4,8 @@ FactoryGirl.find_definitions
 
 require_relative "../ebookmobile"
 
+ActiveRecord::Base.logger = nil unless ENV["LOG"]
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
